@@ -58,8 +58,8 @@ So for example, if I were trying to memorize standard Poker opening ranges
 (which depend on the cards dealt and the "position" you're sitting in at the
 table — High Jack, Cutoff, etc) I could make these two notes:
 
-Note I like to use Cloze cards. My Anki Model for Cloze just has the one field:
-`text`.
+(Note I like to use Cloze cards. My Anki Model for Cloze just has the one field
+`text`).
 
 ```dp4s-anki.wiki
 ---
@@ -123,9 +123,12 @@ CO 36% RFI Range
 RFI with K{{c1::X}}s
 ```
 
-Each of these has two Anki cards. Note my real note has more.
+#### Explanation
 
-What the script in this repository does is:
+Each of these has two Anki cards (there are two separate Note headers). My real
+note has more.
+
+What this script does is:
 
 1) Goes through all the notes named `XXXX-anki.wiki` in my notes directory.
 2) Finds the one's where the `synced` option in the YAML header is `false`.
@@ -137,7 +140,7 @@ Then for each:
 4) Changes the `synced` option to `true`.
 
 ## Misc
-I have some snippets to easily add notes in the 
+I have some snippets to easily add notes in the format:
 
 ```
 # Note
@@ -148,7 +151,6 @@ deck:
 ## Text
 ```
 
-format, as well as to easily select some text and turn it into a cloze field. I
-also have some zk related bindings to quickly create (or open, or link to) Anki
-specific notes. Again, see my [Tech Tools](https://techtoolsbook.com)) for
-more.
+I also have a snippet to easily turn text into a cloze field. I also have some
+zk related bindings to quickly create (or open, or link to) Anki specific
+notes. Again, see my [Tech Tools](https://techtoolsbook.com)) for more.
